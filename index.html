@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Paolo Gera | Web Developer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/observer.js"></script>
+  </head>
+  <body>
+    <div class="wholePage"></div>
+    <header>
+      <nav class="navigation">
+        <div class="navigation__btn-js">
+          <div class="navigation__menu-js"></div>
+        </div>
+        <div class="js-menu">
+          <!-- This meny will be created using JavaScript -->
+        </div>
+
+        <input
+        type="checkbox"
+        class="navigation__checkbox"
+        id="navi-toggle"
+        name="navi-toggle"
+      />        
+        <label for="navi-toggle" class="navigation__btn-css">
+          <div class="navigation__menu-css"></div>
+        </label>
+        <p class="click-here left"><b>&larr; Click this Menu</b></p>
+        <p class="click-here right"><b>or this one &rarr;</b></p>
+        <p class="navigation__text-css">This menu was built using CSS only</p>
+        <div class="menu-css">
+          <ul class="menu-css__list">
+            <a class="menu-css__list-item" href="#hero"><li>Home</li></a>
+            <a class="menu-css__list-item" href="#projects"><li>Projects</li></a>
+            <a class="menu-css__list-item" href="#about"><li>About Me</li></a>
+            <a class="menu-css__list-item" href="#tech"
+              ><li>Technologies</li></a
+            >
+            <a class="menu-css__list-item" href="#social-media"
+              ><li>Social Media</li></a
+            >
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section id="hero" class="hero">
+        <div class="hero__container">
+          <h1 class="hero__title">Paolo Gera</h1>
+          <h3 class="hero__text">Web Developer</h3>
+        </div>
+      </section>
+      <section id="projects" class="projects">
+        <h1 class="section-title">PROJECTS</h1>
+        <div class="projects__list">
+          <div class="projects__item hidden">
+            <img src="images/portfolio_img_001_small.png" alt="Portfolio WebSite" class="projects__image">
+            <button class="projects__btn">Expand for more info...</button>
+            <p class="projects__text">This Portfolio page has some CSS and JavaScript in it 😎. The left menu was created by triggering a function using JS. It is expanded and collapsed also using JavaScript. The same works for each button in the items of the Project area, where I add and "addEventListener" event using a function that loops over the elements inside of the "Project Lists" element.</p>
+            <a href="https://paologera.com.br" target="_blank" class="projects__btn-visit">Visit the Page</a>
+          </div>
+          <div class="projects__item hidden">
+            <img src="images/portfolio_img_002_small.png" alt="Portfolio WebSite" class="projects__image">
+            <button class="projects__btn">Expand for more info...</button>
+            <p class="projects__text">A simple page with an embedded video. I have been asked to create a button that appears only at the very end of the video. I used JavaScript to set the time to do it.</p>
+            <a href="https://susigera.com.br" target="_blank" class="projects__btn-visit">Visit the Page</a>
+          </div>
+          <div class="projects__item hidden">
+            <img src="images/portfolio_img_003_small.png" alt="Portfolio WebSite" class="projects__image">
+            <button class="projects__btn">Expand for more info...</button>
+            <p class="projects__text">Very nice project that I built from a course I attended. Learned a lot of things here in regards to DOM manipulation. Navigation through Lazy Image load, TABs navigation, Slides. Thanks to Jonas for a very nice project. 😎👊</p>
+            <a href="https://paologera.com.br/course-projects/bankist-app/" target="_blank" class="projects__btn-visit">Visit the Page</a>
+          </div>
+
+        </div>
+      </section>
+      <section id="about" class="about">
+        <h1 class="section-title">ABOUT ME</h1>
+        <div class="about__container">
+          <img src="images/paolo_motorcycle_small.png" alt="Selfie Paolo with my motorcycle" class="about__photo">
+          <div class="about__info">
+            <h1 class="about__title">Hi! I'm Glad to see you here</h1>
+            <!-- <p class="about__text">My name is... well, you already saw it at the begginning of this page. 😉</p> -->
+              <p class="about__text">  
+              I'm an <span>IT professional</span> with 18 years of experience as Support and Shared Services analyst, currently am <span>focused studying Web Development</span> to become a Front-End | Back-End | Full-Stack Developer <span>and looking for an opportunity</span>.</p>
+            <p class="about__text"><span>I am passionate by technology</span> and very curious about learning new things. <span>I love challenges</span> and the joy of an achievement is priceless.</p>
+            <p class="about__text">Every company that I work for, <span>I cherish a good relationship between teammates and teams</span> through good communication to keep the harmony in every sense of the word.</p>
+            <p class="about__text">I have <span>strong skills in process improvement and for problem solving.</span></p>
+          </div>
+        </div>
+      </section>
+      <section id="tech" class="tech">
+        <h1 class="section-title">TECHNOLOGIES I KNOW</h1>
+        <div class="tech__container">
+        <div class="tech__item">
+          <div class="tech__side tech__card-front">
+            <img
+              src="images/html_logo.png"
+              alt="HTML Logo"
+              class="tech__logo logo-animation-1"
+            />
+          </div>
+          <div class="tech__side tech__card-back">
+            <h1 class="tech__title">HTML</h1>
+            <p class="tech__text paragraph-border">
+              <span class="paragraph-1stletter">H</span>TML (HyperText Markup
+              Language) is the most basic building block of the Web. It defines
+              the meaning and structure of web content.
+            </p>
+            <p class="tech__text">
+              <span class="paragraph-1stletter">I</span> started learning Web
+              Development in the end of 2021. As I mentioned in the
+              <i>About</i> section, I hold a Computing Bachelor degree and am
+              facinated with lerning new things. When I started studying I fell
+              in love.
+            </p>
+          </div>
+        </div>
+        <div class="tech__item">
+          <div class="tech__side tech__card-front">
+            <img
+              src="images/css_logo.png"
+              alt="CSS Logo"
+              class="tech__logo logo-animation-2"
+            />
+          </div>
+          <div class="tech__side tech__card-back">
+            <h1 class="tech__title">CSS</h1>
+            <p class="tech__text paragraph-border">
+              <span class="paragraph-1stletter">C</span>ascading Style Sheets
+              (CSS) is a stylesheet language used to describe the presentation
+              of a document written in HTML or XML (including XML dialects such
+              as SVG, MathML or XHTML).
+            </p>
+            <p class="tech__text">C</span>SS is where all the magic happens. This very same card done with
+              CSS, or the side menu that I created. It can be done in so many
+              different ways and I learned that, combining a
+              <span>checkbox</span> behavior you can make it change its state.
+              <strong>SO COOL! 😎</strong>
+            </p>
+          </div>
+        </div>
+        <div class="tech__item">
+          <div class="tech__side tech__card-front">
+            <img
+              src="images/js_logo.png"
+              alt="JavaScript Logo"
+              class="tech__logo logo-animation-3"
+            />
+          </div>
+          <div class="tech__side tech__card-back">
+            <h1 class="tech__title">JavaScript</h1>
+            <p class="tech__text paragraph-border">
+              <span class="paragraph-1stletter">J</span>avaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.
+            </p>
+            <p class="tech__text">
+              <span class="paragraph-1stletter">M</span>y first contact with <span>a programming language</span> was in 2002, and I didn't realize the importance of it. As many say, it <span>is a Super Power</span>, and allow us <span>to resolve</span> daily tasks, companies <span>needs</span>, etc. I wish I could develop a time machine to tell young Paolo to start learning a programming language. 😂
+            </p>
+          </div>
+        </div>
+      </div>
+      </section>
+    </main>
+    <footer id="social-media" class="footer">
+      <ul class="footer__nav">
+        <li class="footer__nav-item">
+          <a href="https://www.facebook.com/paolo.gera.9" target="_blank"
+            >Facebook</a
+          >
+        </li>
+        <li class="footer__nav-item">
+          <a href="https://www.instagram.com/paolo_gera/" target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li class="footer__nav-item">
+          <a
+            href="https://api.whatsapp.com/send?phone=351961783984&text=Ol%C3%A1!%20Tenho%20uma%20vaga%20de%20trabalho%20para%20voc%C3%AA.%20%F0%9F%98%8E%F0%9F%91%8D"
+            target="_blank"
+            >Whatsapp</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
